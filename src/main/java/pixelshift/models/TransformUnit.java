@@ -30,7 +30,8 @@ import com.fasterxml.jackson.annotation.JsonSubTypes;
     @JsonSubTypes.Type(name = "ImageFormat_Jpeg", value = ImageFormatJpeg.class),
     @JsonSubTypes.Type(name = "ImageFormat_Png", value = ImageFormatPng.class),
     @JsonSubTypes.Type(name = "ImageFormat_Tiff", value = ImageFormatTiff.class),
-    @JsonSubTypes.Type(name = "ImageFormat_Webp", value = ImageFormatWebp.class)
+    @JsonSubTypes.Type(name = "ImageFormat_Webp", value = ImageFormatWebp.class),
+    @JsonSubTypes.Type(name = "Unit_Unknown", value = UnitUnknown.class)
 })
 public class TransformUnit {
 }
